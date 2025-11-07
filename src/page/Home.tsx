@@ -38,6 +38,7 @@ const Home = () => {
     );
     setResult(response.data.choices[0].message.content);
     setLoading(false);
+    setIdea("");
   };
   const copyCode = () => {
     navigator.clipboard.writeText(result);
